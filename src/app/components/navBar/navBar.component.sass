@@ -1,15 +1,19 @@
 @import '../../../assets/css/colors'
 
 .bg
-    height: 60px;
     background-color: $primary;
 
-    button
-        width: 120px;
-        height: 34px;
-        border-radius: 2px;
-        background-color: $secondaryButton;
-        border: solid 1px $teal;
+.navbar.bg
+
+    .nav-item
+        padding: 2%;
+
+        button
+            width: 120px;
+            height: 34px;
+            border-radius: 2px;
+            background-color: $secondaryButton;
+            border: solid 1px $teal;
     
         label 
             width: 90px;
@@ -22,15 +26,16 @@
             line-height: 1;
             letter-spacing: normal;
             text-align: center;
-            color: #ffffff !important;
-            color: var(--white-four);
+            color: $white-four !important;
+    
+    .Rectangle-2, .navbar-toggler
+        border: solid 1px $white-four-50;
     
     .Rectangle-2
         width: 80px;
         height: 34px;
         border-radius: 2px;
         text-align: center;
-        border: solid 1px $white-four-50;
 
         .Log-In 
             width: 34px;
@@ -62,4 +67,4 @@
     line-height: normal;
     letter-spacing: 0.3px;
     text-align: left;
-    color: rgba(255, 255, 255, 0.6);
+    color: $white-four-50 !important;
