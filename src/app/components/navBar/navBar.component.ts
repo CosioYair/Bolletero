@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navBar.component.sass']
 })
 export class NavBarComponent {
-  title = 'Bolletero';
-
   constructor() {}
 }
