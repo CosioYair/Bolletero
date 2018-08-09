@@ -8,6 +8,8 @@ import { SolutionsComponent } from './components/solutions/solutions.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
+import { NguCarouselModule } from '@ngu/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CarouselComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NguCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
