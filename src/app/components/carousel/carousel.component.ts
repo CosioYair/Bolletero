@@ -22,7 +22,7 @@ export class CarouselComponent {
       },
       load: 2,
       touch: true,
-      loop: true,
+      loop: false,
     };
   }
 }
