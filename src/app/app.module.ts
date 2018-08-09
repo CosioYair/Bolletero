@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { StoriesComponent } from './components/stories/stories.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { StoriesComponent } from './components/stories/stories.component';
     NavBarComponent,
     FeaturesComponent,
     SolutionsComponent,
-    StoriesComponent
+    StoriesComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule
