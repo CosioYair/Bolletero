@@ -11,7 +11,7 @@ img
     font-size: 2.3vw; 
     line-height: 1.5;
 
-.Belloteroio-is-the, .Get-the-full-picture, .Threads-keep-all-you
+.Belloteroio-is-the, .Get-the-full-picture, .Threads-keep-all-you, .Learn-more
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
@@ -27,14 +27,29 @@ img
     color: $black-two;
     margin-top: 25%;
 
+.Threads-keep-all-you, .Learn-more
+    font-size: 1.6vw;
+
 .Threads-keep-all-you 
-    font-size: 1.8vw;
     font-weight: 300;
     line-height: 1.75;
     color: $black-two;
     margin-top: 5%;
 
-@media (max-width: 1280px)
+.Learn-more
+    font-weight: 500;
+    line-height: 1.75;
+    color: $secondaryButton;
+    padding-right: 2%;
+
+.arrow-right 
+    object-fit: contain;
+
+@media screen and (min-width: 1200px)
+
     .Belloteroio-is-the, .Get-the-full-picture
         font-size: 24px; 
+    
+    .Threads-keep-all-you, .Learn-more
+        font-size: 16px;
     
