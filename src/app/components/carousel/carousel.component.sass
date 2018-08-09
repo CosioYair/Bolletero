@@ -1,0 +1,57 @@
+@import '../../../assets/css/colors'
+
+.leftRs, .rightRs
+    visibility: hidden;
+
+.item
+    width: 100% !important;
+    height: 46vh;
+    padding-top: 8%;
+
+.title, .Its-funny-what-memo, .Molly-OKeefe, .American-Author
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+
+.title, .Molly-OKeefe, .American-Author
+    font-size: 2vw;
+    color: $black;
+
+.title
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+
+.Its-funny-what-memo
+    margin-top: 10%;
+    font-size: 1.13vw;
+    font-weight: 300;
+    line-height: 1.75;
+    color: $black-two;
+
+.Molly-OKeefe 
+    margin-top: 13%;
+    font-weight: 300;
+    line-height: 1.5;
+
+.American-Author
+    font-weight: 300;
+    line-height: 1.5;
+    color: $warm-grey;
+
+@media screen and (min-width: 1200px)
+
+    .title, .Molly-OKeefe, .American-Author
+        font-size: 24px; 
+    
+    .Its-funny-what-memo
+        font-size: 16px;
+
+@media screen and (max-width: 575px)
+    .title, .Molly-OKeefe, .American-Author
+        font-size: 3.8vw;
+    
+    .Its-funny-what-memo
+        font-size: 2.8vw;
+
