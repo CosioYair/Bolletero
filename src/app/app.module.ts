@@ -7,6 +7,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { PartnersComponent } from './components/partners/partners.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
 
@@ -17,7 +18,8 @@ import { NguCarouselModule } from '@ngu/carousel';
     FeaturesComponent,
     SolutionsComponent,
     StoriesComponent,
-    CarouselComponent
+    CarouselComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,
