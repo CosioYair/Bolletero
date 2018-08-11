@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { NavBarComponent } from './components/navBar/navBar.component';
@@ -7,8 +8,10 @@ import { FeaturesComponent } from './components/features/features.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { PartnersComponent } from './components/partners/partners.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -17,11 +20,14 @@ import { NguCarouselModule } from '@ngu/carousel';
     FeaturesComponent,
     SolutionsComponent,
     StoriesComponent,
-    CarouselComponent
+    CarouselComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,
-    NguCarouselModule
+    BrowserAnimationsModule,
+    NguCarouselModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
