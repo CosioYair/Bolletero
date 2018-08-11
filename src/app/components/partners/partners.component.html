@@ -24,6 +24,20 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-6 p-0">
+            <div>
+              <label class="small-title">Full-time employees that process invoices</label>
+              <div class="Rectangle">
+                <label class="layer">{{ slideQuantities.timeEmployee }}</label>
+                <mat-slider 
+                  min="1" 
+                  max="10" 
+                  step="1"  
+                  [value]="slideQuantities.timeEmployee"
+                  (input)="onInputChange($event, 'timeEmployee')"></mat-slider>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

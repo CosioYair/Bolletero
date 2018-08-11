@@ -12,6 +12,7 @@ export class PartnersComponent {
   constructor() {
     this.slideQuantities = {
       ingredientSpending: 36.211,
+      timeEmployee: 5
     };
   }
 
