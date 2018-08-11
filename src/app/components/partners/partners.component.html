@@ -14,7 +14,13 @@
             <div>
               <label class="small-title">Monthly ingredient spending</label>
               <div class="Rectangle">
-                <mat-slider min="1" max="5" step="0.5" value="1.5"></mat-slider>
+                <label class="layer">{{ '$' + slideQuantities.ingredientSpending }}</label>
+                <mat-slider 
+                  min="10" 
+                  max="100" 
+                  step="0.1"  
+                  [value]="slideQuantities.ingredientSpending"
+                  (input)="onInputChange($event, 'ingredientSpending')"></mat-slider>
               </div>
             </div>
           </div>

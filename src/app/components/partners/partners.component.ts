@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./partners.component.sass']
 })
 export class PartnersComponent {
-  constructor() {}
+  public slideQuantities:any = {};
+
+  constructor() {
+    this.slideQuantities = {
+      ingredientSpending: 36.211,
+    };
+  }
+
+  public onInputChange(event, key) {
+    this.slideQuantities[key] = event.value;
+  }
 }
