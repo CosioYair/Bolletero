@@ -14,6 +14,7 @@ import { NguCarouselModule } from '@ngu/carousel';
 import { MatSliderModule } from '@angular/material/slider';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BlogComponent } from './components/blog/blog.component';
     CarouselComponent,
     PartnersComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
