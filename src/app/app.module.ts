@@ -12,6 +12,7 @@ import { PartnersComponent } from './components/partners/partners.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
 import { MatSliderModule } from '@angular/material/slider';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatSliderModule } from '@angular/material/slider';
     SolutionsComponent,
     StoriesComponent,
     CarouselComponent,
-    PartnersComponent
+    PartnersComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
