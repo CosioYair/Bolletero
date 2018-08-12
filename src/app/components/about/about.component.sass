@@ -1,0 +1,47 @@
+@import '../../../assets/css/colors'
+
+@mixin placeholder
+  &::-webkit-input-placeholder 
+      @content
+  &:-moz-placeholder           
+      @content
+  &::-moz-placeholder          
+      @content
+  &:-ms-input-placeholder      
+      @content  
+
+.col
+    margin-top: 13%;
+    margin-bottom: 13%;
+
+.Ready-to-get-started
+    font-size: 4.1vw;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: $white-four;
+
+    .text-style-1
+        color: $white-four-50;
+
+.title
+    font-weight: 300;
+    line-height: 1.5;
+    color: $white-four-50;
+    padding-top: 3%;
+
+.special-input 
+    color: $white-four-50;
+    background-color: $green-39;
+
+    @include placeholder
+ 
+        color: $white-four-50;
+
+.special-button
+    background-color: $blue-green;
+
+@media screen and (max-width: 575px)
+
+    .title
+        font-size: 3.1vw;

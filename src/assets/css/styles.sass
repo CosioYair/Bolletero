@@ -1,6 +1,16 @@
 @import "~@angular/material/prebuilt-themes/purple-green.css"
 @import './colors'
 
+@mixin placeholder
+  &::-webkit-input-placeholder 
+      @content
+  &:-moz-placeholder           
+      @content
+  &::-moz-placeholder          
+      @content
+  &:-ms-input-placeholder      
+      @content  
+
 .special-button
     width: 120px;
     height: 42px;
@@ -34,6 +44,11 @@
     border: none; 
     display: inline-block;
     min-width: 121px;
+    padding-left: 3%;
+
+    @include placeholder
+        color: $white-four-30;
+        padding-left: 3%;
 
 .Rectangle-4 
     height: 100px;
@@ -56,7 +71,7 @@
 .p-t-8 
     padding-top: 8%;
 
-.title, .slide-title, .layer,.small-title, .Its-funny-what-memo, .Belloteroio-is-the, .Get-the-full-picture, .Timesaving-moneymak, .Threads-keep-all-you, .Learn-more
+.title, .slide-title, .layer,.small-title, .Its-funny-what-memo, .Belloteroio-is-the, .Get-the-full-picture, .Timesaving-moneymak, .Threads-keep-all-you, .Learn-more, .Ready-to-get-started
     color: $black-two;
     font-style: normal;
     font-stretch: normal;
@@ -90,11 +105,16 @@
     line-height: 1.75;
 
 .Rectangle
-  width: 100%;
-  height: 8vh;
-  border-radius: 2px;
-  background-color: $white-four;
-  border: solid 1px $border-gray;
+    width: 100%;
+    height: 8vh;
+    min-height: 54px;
+    border-radius: 2px;
+    background-color: $white-four;
+    border: solid 1px $border-gray;
+
+.Rectangle-11
+    background-color: $green;
+    box-shadow: inset 0 1px 0 0 #1874c0;
 
 .small-title
     padding-top: 8%;
@@ -117,6 +137,7 @@
 
     .Rectangle
         height: 5vh;
+        min-height: 37px;
 
     .title, .slide-title, .layer, .Belloteroio-is-the, .Get-the-full-picture, .Timesaving-moneymak
         font-size: 4vw;
